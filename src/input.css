@@ -1,20 +1,26 @@
-@import "tailwindcss";
+
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import "tailwindcss";
+@plugin "daisyui";
 
 @theme {
-    --color-mutedBlueGray: #325353; /* More saturated muted blue-gray */
-    --color-softPastelGreen: #79AAA9; /* More saturated soft pastel green */
-    --color-veryLightGray: #F0F4EF; /* More saturated very light gray */
-    --color-veryDarkAlmostBlack: #0D1821; /* More saturated very dark, almost black */
+    --color-main: #608e72; /* More saturated muted blue-gray */
+    --color-softPastelGreen: #b0d0ab; /* More saturated soft pastel green */
+    --color-offWhite: #f5f1e5; /* More saturated very light gray */
+    --color-veryDark: #10453b; /* More saturated very dark, almost black */
+    --color--white: #ececec;
     --color-dustyRoseBrown: #DFB0B0; /* More saturated dusty rose/brownish tone */
 
     --font-nunito: "Nunito Sans", sans-serif;
     --font-logo: "Lato", sans-serif;
-    --font-roboto: "Roboto", sans-serif;
+    --font-roboto: "Roboto", sans-serif; 
     --font-poppins: "Poppins", sans-serif;
+    --font-lora: "Lora", serif;
 
+    --breakpoint-4xl: 125rem
 }
