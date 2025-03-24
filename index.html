@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cdi Counselling</title>
+    <link href="src/output.css" rel="stylesheet">
+</head>
+<body class="bg-offWhite">
+    <!-- Navigation Bar -->
+    <div id="navbar" class="z-50 flex fixed top-0 left-0 w-full bg-transparent transition-all duration-300 text-main text-nunito p-4">
+        <div class="flex-1">
+          <a class="">
+            <img id="logo" class="h-12 ml-2 sm:h-16 md:h-20" src="/src/assets/images/logo-green.svg"/>
+          </a>
+        </div>
+        <div class="flex flex-col sm:flex-row justify-end items-end mt-4 sm:mt-0">          
+            <ul class="flex text-xl sm:text-2xl">
+                <li class="p-2.5 font-lora"><a href="#home">Home</a></li>
+                <li class="p-2.5 font-lora"><a href="#contact-us">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="bg-offWhite min-h-screen mx-6 sm:mx-6 md:mx-12 lg:mx-20 xl:mx-40 2xl:mx-60 4xl:mx-100">
+        <!-- Section 1 (Carousel) -->
+        <section class="carousel relative overflow-hidden mt-[120px] sm:mt-[180px] rounded mx-6 sm:mx-12">
+            <div class="carousel-inner flex transition-transform duration-700 " id="carousel-inner">
+                <!-- Carousel Item 1 -->
+                <div class="carousel-item w-full">
+                    <img src="/src/assets/images/image1.svg" alt="Image 1" class="w-full h-auto">
+                </div>
+                <!-- Carousel Item 2 -->
+                <div class="carousel-item w-full">
+                    <img src="/src/assets/images/image2.svg" alt="Image 2" class="w-full h-auto">
+                </div>
+                <!-- Carousel Item 3 -->
+                <div class="carousel-item w-full">
+                    <img src="/src/assets/images/image1.svg" alt="Image 3" class="w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 (About Us) -->
+        <section class="flex flex-col items-center justify-center mx-6 sm:mx-12 mt-[80px] sm:mt-[100px] min-h-3/4 bg-offWhite text-black">
+            <h2 class="text-3xl sm:text-4xl font-lora text-main mb-6">About Us</h2>
+            <p class="text-lg text-center max-w-2xl text-main mb-8">This section contains more information about our services.</p>
+
+            <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 py-10">
+                <!-- Card 1 -->
+                <div class="text-center bg-white p-6 rounded-lg shadow-lg">
+                    <span class="block bg-softPastelGreen rounded-full w-16 h-16 mx-auto">
+                        <img src="./src/assets/images/professional.svg" alt="Professional" class="w-10 h-10">
+                    </span>
+                    <h2 class="mt-3 mb-4 text-lg sm:text-xl font-medium text-main">
+                        It’s <span class="block text-softPastelGreen capitalize">professional.</span>
+                    </h2>
+                    <p class="text-base text-main">
+                        All therapists are qualified and experienced professionals. Our platform allows you to connect with them in a safe and convenient online environment.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="text-center bg-white p-6 rounded-lg shadow-lg">
+                    <span class="block bg-softPastelGreen rounded-full w-16 h-16 mx-auto">
+                        <img src="./src/assets/images/affordable.svg" alt="Affordable" class="w-10 h-10">
+                    </span>
+                    <h2 class="mt-3 mb-4 text-lg sm:text-xl font-medium text-main">
+                        It’s <span class="block text-softPastelGreen capitalize">affordable.</span>
+                    </h2>
+                    <p class="text-base text-main">
+                        Pay a low flat fee for both live sessions and messaging with your therapist. Therapy doesn’t have to be expensive.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="text-center bg-white p-6 rounded-lg shadow-lg">
+                    <span class="block bg-softPastelGreen rounded-full w-16 h-16 mx-auto">
+                        <img src="./src/assets/images/convenient.svg" alt="Convenient" class="w-10 h-10">
+                    </span>
+                    <h2 class="mt-3 mb-4 text-lg sm:text-xl font-medium text-main">
+                        It’s <span class="block text-softPastelGreen capitalize">convenient.</span>
+                    </h2>
+                    <p class="text-base text-main">
+                        Do it at your own time and pace. Communicate with your therapist as often as you want and whenever you feel it's needed.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="text-center bg-white p-6 rounded-lg shadow-lg">
+                    <span class="block bg-softPastelGreen rounded-full w-16 h-16 mx-auto">
+                        <img src="./src/assets/images/effective.svg" alt="Effective" class="w-10 h-10">
+                    </span>
+                    <h2 class="mt-3 mb-4 text-lg sm:text-xl font-medium text-main">
+                        It’s <span class="block text-softPastelGreen capitalize">effective.</span>
+                    </h2>
+                    <p class="text-base text-main">
+                        Millions of people have benefited from therapy globally. You can switch therapists at any point if you don't feel you are getting enough benefit.
+                    </p>
+                </div>
+            </section>
+        </section>
+
+        <!-- Section 3 (Contact Us) -->
+        <section id="contact-us" class="flex flex-col items-center justify-center mx-6 sm:mx-12 mt-[80px] bg-main rounded-lg p-6 mb-6">
+            <h2 class="text-3xl sm:text-4xl font-lora text-white mb-6 text-center">Contact Us</h2>
+            <p class="text-lg text-gray-300 mb-8 text-center max-w-2xl">Have any questions? Feel free to send us a message, and we'll get back to you shortly.</p>
+
+            <form action="https://api.web3forms.com/submit" method="POST" id="form" class="w-full max-w-2xl bg-white bg-opacity-10 backdrop-blur-lg p-8 rounded-2xl shadow-lg border border-gray-500">
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="3a1a668c-fdb1-4df9-9c5c-07f2c0ce0378">
+
+                <div class="flex flex-col gap-6">
+                    <input type="text" name="name" required placeholder="Your Name"
+                        class="w-full px-4 py-3 rounded-lg text-black text-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-veryDark">
+
+                    <input type="email" name="email" required placeholder="Your Email"
+                        class="w-full px-4 py-3 rounded-lg text-black text-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-veryDark">
+
+                    <textarea name="message" required placeholder="Your Message"
+                        class="w-full px-4 py-3 rounded-lg text-black text-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-veryDark min-h-[150px]"></textarea>
+
+                    <button type="submit"
+                        class="w-full bg-main hover:bg-veryDark text-white text-lg font-semibold px-6 py-3 rounded-lg hover:bg-opacity-80 transition-all">
+                        Send Message
+                    </button>
+                </div>
+                <div class="text-veryDark text-2xl" id="result"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer sm:footer-horizontal footer-center bg-veryDark text-offWhite p-4">
+        <aside>
+          <p>Copyright © 2025 - All right reserved</p>
+        </aside>
+      </footer>
+      <script>
+        const form = document.getElementById('form');
+        const result = document.getElementById('result'); // Make sure you have an element with id="result" to show the message
+    
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+            result.innerHTML = "Please wait..."; // Show loading message
+    
+            // Send form data to Web3Forms API
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = json.message; // Show success message
+                } else {
+                    result.innerHTML = json.message; // Show error message if submission fails
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.innerHTML = "Something went wrong! Please try again."; // Show error message in case of network failure
+            })
+            .then(function() {
+                form.reset(); // Reset the form after submission
+            });
+        });
+    </script>
+     <script>
+        // JavaScript for auto-cycling the carousel
+        let currentIndex = 0;
+        const items = document.querySelectorAll('.carousel-item');
+        const totalItems = items.length;
+        const carouselInner = document.getElementById('carousel-inner');
+
+        function cycleCarousel() {
+            currentIndex = (currentIndex + 1) % totalItems;
+            carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(cycleCarousel, 5000); // Change every 5 seconds
+    </script>
+    <script>
+        window.addEventListener("scroll", function() {
+            const navbar = document.getElementById("navbar");
+            const logo = document.getElementById("logo");
+            if (window.scrollY > 50) {
+                navbar.classList.remove("bg-transparent", "text-main");
+                logo.setAttribute("src", "/src/assets/images/logo-white.svg")
+                navbar.classList.add("bg-veryDark", "shadow-lg", "backdrop-blur-md", "text-white");
+            } else {
+                logo.setAttribute("src", "/src/assets/images/logo-green.svg")
+                navbar.classList.add("bg-transparent", "text-main");
+                navbar.classList.remove("bg-veryDark", "shadow-lg", "backdrop-blur-md", "text-white");
+            }
+        });
+    </script>
+</body>
+</html>
