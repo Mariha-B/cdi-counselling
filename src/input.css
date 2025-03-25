@@ -13,8 +13,6 @@
     --color-softPastelGreen: #b0d0ab; /* More saturated soft pastel green */
     --color-offWhite: #f5f1e5; /* More saturated very light gray */
     --color-veryDark: #10453b; /* More saturated very dark, almost black */
-    --color--white: #ececec;
-    --color-dustyRoseBrown: #DFB0B0; /* More saturated dusty rose/brownish tone */
 
     --font-nunito: "Nunito Sans", sans-serif;
     --font-logo: "Lato", sans-serif;
@@ -25,3 +23,4 @@
 
     --breakpoint-4xl: 125rem
 }
+
