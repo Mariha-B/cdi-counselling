@@ -33,19 +33,24 @@
 </head>
 <body class="bg-offWhite">
     <!-- Navigation Bar -->
-    <div id="navbar" class="z-50 flex fixed top-0 left-0 w-full bg-transparent transition-all duration-300 text-main text-nunito p-4">
-        <div class="flex-1">
-          <a class="">
-            <img id="logo" class="h-12 ml-2 sm:h-16 md:h-20" src="/src/assets/images/logo-green.svg"/>
-          </a>
+    <div id="navbar" class="z-50 fixed top-0 left-0 w-full bg-transparent transition-all duration-300 text-main text-nunito p-4 flex flex-col sm:flex-row sm:items-end sm:justify-between">
+        <!-- Logo: Centered on Mobile, Left on Desktop -->
+        <div class="flex justify-center sm:justify-start w-full sm:w-auto">
+            <a>
+                <img id="logo" class="h-12 ml-2 sm:h-16 md:h-20" src="/src/assets/images/logo-green.svg"/>
+            </a>
         </div>
-        <div class="flex flex-col sm:flex-row justify-end items-end mt-4 sm:mt-0">          
-            <ul class="flex text-xl sm:text-2xl">
+    
+        <!-- Navigation: Centered on Mobile, Right on Desktop -->
+        <div class="flex justify-center sm:justify-end sm:just w-full sm:w-auto mt-4 sm:mt-0">
+            <ul class="flex sm:flex-row text-xl sm:text-2xl">
                 <li class="p-2.5 font-lora"><a href="#welcome">Home</a></li>
+                <li class="p-2.5 font-lora"><a href="#testimonial">Testimonials</a></li>
                 <li class="p-2.5 font-lora"><a href="#contact-us">Contact</a></li>
             </ul>
         </div>
     </div>
+    
     <section id="welcome" class="text-center bg-offWhite text-main py-12 px-6 sm:px-12 pt-40">
         <h1 class="text-3xl sm:text-5xl font-lora font-semibold text-veryDark mb-6">Welcome to CDI Counselling Service</h1>
         <p class="text-xl text-center max-w-2xl mx-auto text-main mb-8">
@@ -112,7 +117,7 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class="text-center bg-white p-8 rounded-lg shadow-lg text-lg">
+                <div id="testimonial" class="text-center bg-white p-8 rounded-lg shadow-lg text-lg">
                     <span class="flex justify-center items-center bg-softPastelGreen rounded-full w-20 h-20 mx-auto">
                         <img src="./src/assets/images/calendar.svg" alt="Referral" class="w-13 h-13">
                     </span>
@@ -129,25 +134,25 @@
             </p>
         
             <!-- 4 Column Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 gap-10 mt-20">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 mt-20 custom-gap">
                 <!-- Image 1 -->
-                <div class="group relative">
-                    <img src="/src/assets/images/feedback1.png" alt="Testimonial 1" class="w-full shadow-lg rounded h-auto transform transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:translate-y-[-10px]">
+                <div class="group relative image-container">
+                    <img src="/src/assets/images/feedback1.png" alt="Testimonial 1" class="w-full shadow-lg rounded h-auto">
                 </div>
-        
+            
                 <!-- Image 2 -->
-                <div class="group relative">
-                    <img src="/src/assets/images/feedback2.png" alt="Testimonial 2" class="w-full shadow-lg rounded h-auto transform transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:translate-y-[-10px]">
+                <div class="group relative image-container">
+                    <img src="/src/assets/images/feedback2.png" alt="Testimonial 2" class="w-full shadow-lg rounded h-auto">
                 </div>
-        
+            
                 <!-- Image 3 -->
-                <div class="group relative">
-                    <img src="/src/assets/images/feedback3.png" alt="Testimonial 3" class="w-full shadow-lg rounded h-auto transform transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:translate-y-[-10px]">
+                <div class="group relative image-container">
+                    <img src="/src/assets/images/feedback3.png" alt="Testimonial 3" class="w-full shadow-lg rounded h-auto">
                 </div>
-        
+            
                 <!-- Image 4 -->
-                <div class="group relative">
-                    <img src="/src/assets/images/feedback4.png" alt="Testimonial 4" class="w-full shadow-lg rounded h-auto transform transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:translate-y-[-10px]">
+                <div class="group relative image-container">
+                    <img src="/src/assets/images/feedback4.png" alt="Testimonial 4" class="w-full shadow-lg rounded h-auto">
                 </div>
             </div>
         </section>
@@ -155,8 +160,10 @@
         <!-- Section 3 (Contact Us) -->
         <section id="contact-us" class="flex flex-col items-center justify-center mx-6 sm:mx-12 mt-[80px] shadow-lg bg-veryDark rounded-lg p-10 mb-20">
             <h2 class="text-3xl sm:text-5xl font-lora text-white my-6 text-center font-semibold">Contact Us</h2>
-            <p class="text-xl text-white mb-8 text-center max-w-2xl">Have any questions? Feel free to send us a message, and we'll get back to you shortly.</p>
-
+            <p class="text-xl text-white mb-8 text-center max-w-2xl">
+                Have any questions? Feel free to send us a message, and we'll get back to you shortly.<br>
+                Or call us at <strong class="underline">07788414771</strong>.
+              </p>
             <form action="https://api.web3forms.com/submit" method="POST" id="form" class="w-full max-w-2xl my-10 bg-white bg-opacity-10 backdrop-blur-lg p-10 rounded shadow-lg border border-gray-500">
                 <!-- Web3Forms Access Key -->
                 <input type="hidden" name="access_key" value="3a1a668c-fdb1-4df9-9c5c-07f2c0ce0378">
@@ -170,6 +177,11 @@
 
                     <textarea name="message" required placeholder="Your Message"
                         class="w-full px-4 py-3 rounded-lg text-black text-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-veryDark min-h-[150px]"></textarea>
+
+                        <div class="flex items-center gap-4 p-4">
+                            <input type="checkbox" id="humanCheck" required class="w-7 h-7">
+                            <label for="humanCheck" class="text-veryDark text-xl">I'm not a robot</label>
+                        </div>
 
                     <button type="submit"
                         class="w-full bg-main hover:bg-veryDark text-white text-lg font-semibold px-6 py-3 rounded-lg hover:bg-opacity-80 transition-all">
@@ -252,5 +264,29 @@
             }
         });
     </script>
+    <style>
+        /* Custom gap for grid */
+        .custom-gap {
+            gap: 2.5rem; /* Equivalent to gap-10 */
+        }
+    
+        /* Hover effect styles */
+        .image-container {
+            position: relative;
+
+        }
+    
+        .image-container img {
+            width: 100%;
+            height: auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+    
+        .image-container:hover img {
+            transform: scale(1.1) translateY(-10px);
+        }
+    </style>
 </body>
 </html>
